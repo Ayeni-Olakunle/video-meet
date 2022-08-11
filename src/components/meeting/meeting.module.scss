@@ -1,0 +1,113 @@
+.holdAll {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  .big {
+    width: 70%;
+    height: 100vh;
+    background-color: black;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+    .bigBox {
+      height: 200px;
+      width: 300px;
+      border: 2px solid gray;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .num {
+      font-size: 70px;
+      color: white;
+      background-color: #1976d2;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+  }
+  .small {
+    width: 30%;
+    height: 100vh;
+    padding: 20px;
+
+    .displayMsg {
+      height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding: 25px 0;
+
+      .sendMsg {
+        display: flex;
+        justify-content: flex-end;
+
+        .smallBit {
+          background-color: #0288d1;
+          color: white;
+          width: fit-content;
+          padding: 10px;
+          border-radius: 10px 15px 0;
+        }
+      }
+
+      .receivedMsg {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        .receivedBit {
+          background-color: #43a047;
+          color: white;
+          width: fit-content;
+          padding: 10px;
+          border-radius: 10px 15px 10px 0px;
+        }
+
+        .times {
+          margin: 0;
+          font-size: 12px;
+          color: gray;
+        }
+      }
+    }
+
+    .textInput {
+      width: 100%;
+    }
+
+    .input {
+      width: 80%;
+      border: none;
+      box-shadow: 5px 5px 5px #eaeaea, -5px -5px 5px #eaeaea;
+      padding: 10px;
+      border-radius: 50px;
+      margin-right: 10px;
+      outline: none;
+    }
+
+    .sendButin {
+      border-radius: 50%;
+      font-size: 10px;
+      padding: 13px;
+      border: none;
+      outline: none;
+      background-color: #1976d2;
+      color: white;
+    }
+  }
+  .time {
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+    text-align: right;
+  }
+}
